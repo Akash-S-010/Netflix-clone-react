@@ -22,13 +22,14 @@
 .card-list .card {
     width: 240px;
     text-align: center;
+    text-decoration: none;
     color: rgb(144, 143, 143);
     width: 240px; 
 }
 .card p{
-    display: block;
     color: rgb(158, 158, 158);
     text-align: center;
+    margin-top: 5px;
 }
 
 .card-list img {
@@ -36,3 +37,4 @@
     border-radius: 8px; 
     cursor: pointer;
 }
+
