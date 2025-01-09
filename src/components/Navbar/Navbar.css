@@ -6,7 +6,7 @@
     position: fixed;
     font-size: 1rem;
     color: #e5e5e5;
-    background-image: linear-gradient(180deg,rgba(0,0,0,.8)20%,transparent);
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.549)20%,transparent);
     z-index: 1;
 }
 .logo-section{
@@ -65,4 +65,7 @@
 }
 .nav-profile:hover .dropdown{
     display: block;
+}
+.nav-dark{
+    background-color: black;
 }
