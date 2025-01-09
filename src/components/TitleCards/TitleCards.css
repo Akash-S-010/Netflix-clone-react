@@ -1,26 +1,38 @@
-.title-cards{
+.title-cards {
     margin-top: 50px;
     margin-bottom: 30px;
-    margin-left: 6%;
+    margin-left: 6%; 
 }
-.title-cards h2{
+
+.title-cards h2 {
     margin-bottom: 15px;
 }
-.card-list{
+
+.card-list {
     display: flex;
-    gap: 20px;
+    gap: 20px; 
     overflow-x: scroll;
+    padding: 0; 
 }
-.card-list::-webkit-scrollbar{
-    display: none;
+
+.card-list::-webkit-scrollbar {
+    display: none; 
 }
-.card-list img{
+
+.card-list .card {
     width: 240px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.card-list .card{
-    position: relative;
     text-align: center;
     color: rgb(144, 143, 143);
+    width: 240px; 
+}
+.card p{
+    display: block;
+    color: rgb(158, 158, 158);
+    text-align: center;
+}
+
+.card-list img {
+    width: 240px; 
+    border-radius: 8px; 
+    cursor: pointer;
 }

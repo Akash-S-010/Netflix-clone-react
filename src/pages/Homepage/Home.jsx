@@ -34,11 +34,10 @@ function Home() {
         </div>
       </div>
       <div className="cards">
-        <TitleCards />
-        <TitleCards title={"Blockbuster Movies"} />
-        <TitleCards title={"Only on Netflix"} />
-        <TitleCards title={"upcoming"} />
-        <TitleCards title={"Top picks for you"} />
+        <TitleCards title={"Blockbuster Movies"}  category={"top_rated"}/>
+        <TitleCards title={"Only on Netflix"}  category={"popular"}/>
+        <TitleCards title={"Upcoming"}  category={"upcoming"}/>
+        <TitleCards title={"Top picks for you"}  category={"now_playing"}/>
       </div>
       <Footer />
     </div>
