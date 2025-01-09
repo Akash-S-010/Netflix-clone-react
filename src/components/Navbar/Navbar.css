@@ -67,5 +67,6 @@
     display: block;
 }
 .nav-dark{
+    transition: .4s ease;
     background-color: black;
 }
