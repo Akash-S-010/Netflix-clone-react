@@ -22,7 +22,7 @@ function Player() {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlMjQ5ZTQxMzZkMTA5OWEyZWE1MGI2M2U3Yjk3NjgyNCIsIm5iZiI6MTczNjI0NzM5NS4yOTc5OTk5LCJzdWIiOiI2NzdkMDg2MzVjNzM4ZTFjMjI2NjhmNTQiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.7D3vJEsorSgfc-d_87e7GjOvRg9Rqmxen3pASRTYawA'
+      Authorization:`Bearer ${import.meta.env.VITE_TMDB_API_KEY}`
     }
   };
 
