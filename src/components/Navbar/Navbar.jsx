@@ -9,17 +9,26 @@ import { logOut } from "../../firebase";
 
 function Navbar() {
 
-    const navRef = useRef()
+  const navRef = useRef(null);
 
-    useEffect(() => {
-      window.addEventListener("scroll",()=>{
-        if(window.scrollY >= 250){
-          navRef.current.classList.add("nav-dark")
-        }else{
-          navRef.current.classList.remove("nav-dark")
+  useEffect(() => {
+    const handleScroll = () => {
+      if (navRef.current) { // Check if navRef.current is not null
+        if (window.scrollY >= 250) {
+          navRef.current.classList.add("nav-dark");
+        } else {
+          navRef.current.classList.remove("nav-dark");
         }
-      })
-    },[])
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup function to remove event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div ref={navRef} className="navbar">
@@ -42,7 +51,7 @@ function Navbar() {
           <img src={profile} alt="profile" className="profile" />
           <img src={caret} alt="caret" />
           <div className="dropdown">
-            <p onClick={()=>{logOut()}}>Sign Out of Netflix</p>
+            <p onClick={() => { logOut(); }}>Sign Out of Netflix</p>
           </div>
         </div>
       </div>
