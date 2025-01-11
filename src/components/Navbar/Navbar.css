@@ -70,3 +70,24 @@
     transition: .4s ease;
     background-color: black;
 }
+
+@media (width < 1158px) {
+    .navbar{
+        padding: 20px 4%;
+    }
+    .logo-section ul{
+        display: none;
+    }
+    .logo-section img{
+        height: 25px;
+    }
+}
+
+@media (width < 500px) {
+    .logo-section img{
+        height: 20px;
+    }
+    .right-section{
+        gap: 10px;
+    }
+}

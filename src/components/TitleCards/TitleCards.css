@@ -38,3 +38,18 @@
     cursor: pointer;
 }
 
+@media (width < 800px){
+    .title-cards h2{
+        font-size: 20px;
+    }
+    .card-list{
+        gap: 10px;
+    }
+    .card-list img{
+        width: 200px;
+    }
+    .card-list p{
+        font-size: 12px;
+    }
+}
+

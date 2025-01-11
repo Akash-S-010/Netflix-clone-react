@@ -2,6 +2,8 @@
     height: 100vh;
     background-image: linear-gradient(#000000ae, #000000a4), url(../../assets/background_banner.jpg);
     padding: 20px 8%;
+    display: flex;
+    flex-direction: column;
 }
 
 .login-logo {
@@ -98,6 +100,16 @@
     justify-content: center;
     align-items: center;
 }
-.login-spinner img{
+
+.login-spinner img {
     width: 100px;
+}
+
+@media (width < 500px) {
+    .login{
+        padding: 25px 4%;
+    }
+    .login-form {
+        padding: 50px;
+    }
 }

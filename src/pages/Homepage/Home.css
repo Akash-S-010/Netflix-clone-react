@@ -1,36 +1,43 @@
-.hero{
+.hero {
     position: relative;
 }
-.hero-banner{
+
+.hero-banner {
     width: 100%;
     height: 100vh;
-    mask-image: linear-gradient(to right,transparent,black 90%);
+    mask-image: linear-gradient(to right, transparent, black 90%);
 }
-.hero-caption{
+
+.hero-caption {
     position: absolute;
     width: 100%;
     padding-left: 6%;
     bottom: 5%;
 }
-.caption-img{
+
+.caption-img {
     width: 90%;
     max-width: 420px;
     margin-bottom: 30px;
 }
-.hero-caption .hero-para{
+
+.hero-caption .hero-para {
     max-width: 700px;
     font-size: 17px;
     margin-bottom: 20px;
 }
-.hero-btns{
+
+.hero-btns {
     display: flex;
     gap: 10px;
     margin-bottom: 50px;
 }
-.hero-btns .btn img{
+
+.hero-btns .btn img {
     width: 20px;
 }
-.hero-btns .btn{
+
+.hero-btns .btn {
     border: 0;
     outline: 0;
     padding: 8px 20px;
@@ -43,13 +50,34 @@
     border-radius: 4px;
     cursor: pointer;
 }
-.btn.dark-btn{
+
+.btn.dark-btn {
     color: white;
     background: #757575cd;
 }
-.btn:hover{
+
+.btn:hover {
     background: #ffffffbf;
 }
-.btn.dark-btn:hover{
+
+.btn.dark-btn:hover {
     background: #6d6d6e66;
+}
+
+@media (width < 1024px){
+    .hero-btns{
+        margin-bottom: 30px;
+    }
+}
+@media (width < 800px){
+    .hero-caption{
+        padding-left: 4%;
+    } 
+    .caption-img{
+        margin-bottom: 10px;
+        width: 40%;
+    }
+    .hero-caption .hero-para{
+        font-size: 12px;
+    }
 }
